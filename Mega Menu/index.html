@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Mega Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body background="camera-set-up-outside.jpg" bgproperties="fixed">
+    <nav>
+        <div class="wrapper container d-flex js-between align-center">
+            <div class="logo"><a href="#">CodingNilam</a></div>
+            <input type="radio" name="slide" id="menu-btn">
+            <input type="radio" name="slide" id="cancel-btn">
+
+            <ul class="nav-links">
+                <label for="cancel-btn" class="btn cancel-btn"><i class='bx bx-x'></i></label>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#" class="desktop-item">DropDown</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Drop Down</label>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">DropDownMenu 1</a></li>
+                        <li><a href="#">DropDownMenu 2</a></li>
+                        <li><a href="#">DropDownMenu 3</a></li>
+                        <li><a href="#">DropDownMenu 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="desktop-item">Mega Menu</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Mega Menu</label>
+                    <div class="mega-box">
+                        <div class="content d-flex align-center js-between">
+                            <div class="row">
+                                <img src="camera-set-up-outside.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <header>Design Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Graphics</a></li>
+                                    <li><a href="#">Vectors</a></li>
+                                    <li><a href="#">Business Card</a></li>
+                                    <li><a href="#">Custom Logo</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Email Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Personal Email</a></li>
+                                    <li><a href="#">Business Email</a></li>
+                                    <li><a href="#">Mobile Email</a></li>
+                                    <li><a href="#">Web Marketing</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Security Service</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Site Seal</a></li>
+                                    <li><a href="#">VPS Hosting</a></li>
+                                    <li><a href="#">Privacy seal</a></li>
+                                    <li><a href="#">Website Design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+
+            <label for="menu-btn" class="btn menu-btn"><i class='bx bx-menu'></i></label>
+           
+        </div>
+    </nav>
+</body>
+</html>
