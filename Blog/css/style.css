@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+}
+.navigation{
+    font-family: var(--font-1);
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation .nav-left {
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+}
+.navigation .nav-left a{
+    color: #000;
+}
+
+.navigation .nav-left span{
+    padding-top: 5px;
+    font-size: 30px;
+}
+.navigation .nav-left ul{
+    margin: 0px 0px 0px 50px;   
+}
+.navigation .nav-left ul li{
+    display: inline-block;
+}
+.navigation .nav-left ul li a{
+    font-family: var(--font-2);
+    font-size: 24px;
+    margin: 0 14px;
+    color: #000;
+    font-weight: 600;
+}
+.navigation .nav-left ul li a:hover{
+    color: var(--main-bg-color);
+}
+.content{
+    /* background-color: rgb(211 210 248); */
+    display: flex;
+    align-items: center;
+    /* height: 395px; */
+    padding: 10px;
+    position: relative;
+}
+.content::after{
+    content: "";
+    position: absolute;
+    background-image: url('../img/pexels-vlada-karpovich-4050347.jpg'); 
+    background-size: cover;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+.content .content-left{
+    /* flex: 0 0 50%;
+    width: 50%; */
+    /* width: 88%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-family: var(--font-1);
+    padding: 50px;
+}
+.content .content-right{
+    /* flex: 0 0 50%;
+    width: 50%; */
+    /* width: 22%; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.content .content-right img{ 
+    height: 255px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 270px;
+}
+.home-articles{
+    background-color: #d7d2e1;
+    padding: 15px 10px 0px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.year-box label, .year-box input{
+    margin: 0px 5px;
+    font-size: 17px;
+}
+.home-article {
+    display: flex;
+    margin: 25px 0px;
+}
+.home-article:last-child{
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+}
+.home-article .img-content{
+    width: 24%;
+}
+.home-article .home-article-content{
+    width: 76%;
+    align-self: center;
+    padding: 15px 20px 15px 20px;
+}
+.home-article-content a{
+    color: #000;
+}
+.footer{
+    background-color: #c19bc5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.footer a, .footer p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer p{
+    margin-bottom: 10px;
+}
