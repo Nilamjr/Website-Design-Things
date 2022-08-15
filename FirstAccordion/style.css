@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    max-width: 600px;
+    padding: 0 20px;
+}
+.wrapper .parent-tab,
+.wrapper .child-tab{
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.wrapper input{
+    display: none;
+}
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+    background: #ca7691;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+.wrapper label span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 -1px 1px #0056b3;
+}
+.child-tab label span{
+    font-size: 17px;
+}
+.wrapper label .icon{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    color: #ca7691;
+    border-radius: 50%;
+    text-shadow: 0 -1px 1px #0056b3;
+}
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+    content: '\2d';
+}
+
+.wrapper label .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+    max-height: 100vh;  
+}
+.tab-3 input:checked ~ .content {
+    padding: 15px 30px;
+}
+
+.wrapper .parent-tab .content p,
+.wrapper .child-tab .sub-content p{
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+
+
+
