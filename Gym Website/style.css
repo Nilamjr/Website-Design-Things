@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.container{
+    max-width: 80vw;
+}
+.logo-style{
+    color: #e34a38;
+    font-size: 1.3rem;
+    font-family: 'Noto Sans', sans-serif; 
+}
+.nav-wrap{
+    min-height: 67px;
+}
+.navbar{
+    font-family: 'Varela Round', sans-serif;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+.section1{
+
+}
+.section1-left{
+    width: 50%;
+    /* min-height: 50vh; */
+}
+.section1-right{
+    width:50%;
+    /* min-height: 50vh; */
+}
+.dumbelImg{
+    max-width: 190px;
+}
+.section1-left h1{
+    font-size: 1.7rem;
+}
+.section2 .section2-heading{
+    font-size: 2rem; 
+}
+.section-info{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.cards{
+    margin-top: 30px;
+}
+.card{
+    border: 2px solid #e24937;
+    width: 22vw;
+    margin: 0 22px;
+    text-align: center;
+}
+.card h2{
+    padding-top: 12px;
+    font-size: 1.5rem;
+}
+.card li{
+    padding: 12px 0;
+}
+.card .highlighted{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.section3 .section3-heading{
+    font-size: 2rem; 
+}
+.section3 table{
+    width: 1000px;
+    margin: 50px auto 150px; 
+    border-collapse: collapse;
+}
+.section3 table th{
+    border-bottom: 1px solid #000;
+    padding: 12px 0;
+}
+.section3 table td{
+    border-bottom: 1px solid #000;
+}
+
