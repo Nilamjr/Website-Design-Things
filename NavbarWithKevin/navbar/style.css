@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('../starry-skies-in-the-dessert-canyons.jpg');
+    font-family: 'Roboto', sans-serif;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.js-between{
+    justify-content: space-between;
+}
+a{
+    color: #585864;
+    font-size: 18px;
+}
+ul{
+    list-style: none;
+}
+header{
+    color: #585864;
+    padding: 1%;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.primary-navigation li{
+    margin-inline: 20px;
+}
+.primary-navigation a{
+    text-decoration: none;
+}
+.primary-navigation a > [aria-hidden="true"]{
+    font-weight: bolder;
+    margin-inline-end: 0.75em;
+}
+
+
+
+@media (max-width: 35em){
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        background: hsl(0 0% 100% / 0.1); 
+
+    }
+
+
+}

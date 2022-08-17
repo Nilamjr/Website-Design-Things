@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navbar container d-flex align-center js-between">
+            <i class='bx bx-menu menu-icon'></i>
+            <div class="logo"><a href="#">NilamLab</a></div>
+            <div class="nav-links">
+                <div class="sidebar-log">
+                    <span class="logo-name">
+                        NilamLab
+                    </span>
+                    <i class='bx bx-x close-menu'></i>
+                </div>
+                <ul class="links d-flex align-center js-between">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">HTML & CSS</a>
+                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                        <ul class="htmlCss-submenu sub-menu">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Login Form</a></li>
+                            <li><a href="#">Card Design</a></li>
+                            <li class="more">
+                                <a href="#">More</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Dynamic Calculator</a></li>
+                                    <li><a href="#">Form Validation</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#">Digital Clock</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Javascript</a>
+                        <i class='bx bxs-chevron-down arrow js-arrow'></i>
+                        <ul class="js-submenu sub-menu">
+                            <li><a href="#">Dynamic Calculator</a></li>
+                            <li><a href="#">Form Validation</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Digital Clock</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search-alt-2 icon'></i>
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
