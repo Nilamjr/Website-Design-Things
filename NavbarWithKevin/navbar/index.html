@@ -11,8 +11,10 @@
 
     <header class="d-flex js-between align-center">
         <div class="logo">Logo</div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
         <nav>
-            <ul class="primary-navigation d-flex" id="primary-navigation">
+            <ul class="primary-navigation d-flex" id="primary-navigation" data-visible="false">
                 <li class="active">
                     <a href="index.html">
                         <span aria-hidden="true">00</span>Home
@@ -36,6 +38,8 @@
             </ul>
         </nav>
     </header>
-  
+    
+    <script src="nav.js"></script>
+
 </body>
 </html>
