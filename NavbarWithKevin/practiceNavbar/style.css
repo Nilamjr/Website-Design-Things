@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../starry-skies-in-the-dessert-canyons.jpg');
+    background-repeat: no-repeat;
+}
+header{
+    padding: 0 10%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+.js-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.logo a{
+    font-size: 1.5625rem;
+}
+.primary-navigation{
+    background: hsl(0, 0%, 100%, 0.1);
+    gap: 2rem;
+    z-index: 1000;
+}
+.primary-navigation a{
+    font-size: 1.125rem;
+}
+.primary-navigation a span{
+    padding-right: 0.5rem;
+}
+.mobile-nav-toggle{
+    position: absolute;
+    z-index: 9999;
+    right: 10%;
+    top: 2rem;
+    width: 1.8rem;
+    aspect-ratio: 1;
+    background-image: url('../navbar/asset/menu2.svg');
+    background-repeat: no-repeat;
+}
+.sr-only{
+    font-size: 0;
+}
+@media(max-width: 35rem){
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;  
+    }
+}
