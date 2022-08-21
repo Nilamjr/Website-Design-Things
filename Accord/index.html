@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Accordion Practice</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="accordion">
+                <div class="question">
+                    <h2>What is Web developement</h2>
+                    <span><i class='bx bx-plus-medical'></i></span>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quam error fugit explicabo, sint autem beatae fugiat, dolor natus consequuntur excepturi aut aliquid, voluptas sed culpa iste perferendis rerum soluta aliquam minus pariatur. Error!</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="question">
+                    <h2>What is HTML & CSS</h2>
+                    <span aria-hidden="true"><i class='bx bx-plus-medical'></i></span>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quam error fugit explicabo, sint autem beatae fugiat, dolor natus consequuntur excepturi aut aliquid, voluptas sed culpa iste perferendis rerum soluta aliquam minus pariatur. Error!</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="question">
+                    <h2>What is Javascript</h2>
+                    <span aria-hidden="true"><i class='bx bx-plus-medical'></i></span>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quam error fugit explicabo, sint autem beatae fugiat, dolor natus consequuntur excepturi aut aliquid, voluptas sed culpa iste perferendis rerum soluta aliquam minus pariatur. Error!</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="question">
+                    <h2>What is Bootstrap</h2>
+                    <span aria-hidden="true"><i class='bx bx-plus-medical'></i></span>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quam error fugit explicabo, sint autem beatae fugiat, dolor natus consequuntur excepturi aut aliquid, voluptas sed culpa iste perferendis rerum soluta aliquam minus pariatur. Error!</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const accord = document.querySelectorAll('.accordion');
+
+            accord.forEach(item => {
+                item.addEventListener('click', () => {
+                    // console.log("Item", item);
+                    item.classList.toggle('active');
+
+                    if(item.classList.contains('active')){
+                        item.querySelector("i").classList.replace("bx-plus-medical", "bx-minus");
+                    }else{
+                        item.querySelector("i").classList.replace("bx-minus", "bx-plus-medical");
+                    }
+                });
+            });
+
+        </script>
+
+
+
+    </body>
+</html>
