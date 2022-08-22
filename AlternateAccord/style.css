@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: #E3F2FD;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.js-between{
+    justify-content: space-between;
+}
+.accordion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+.accordion-content {
+    background: #FFF7F0;
+    border: 1px solid #ffd6b3;
+    border-radius: 4px;
+    margin: 0.625rem 0;
+    overflow: hidden;
+}
+.accordion-content:nth-child(2){
+    background: #F0FAFF;
+    border: 1px solid #CCEEFF;
+}
+.accordion-content:nth-child(3){
+    background: #FFF0F3;
+    border: 1px solid #FFCCD6;
+}
+.accordion-content:nth-child(4){
+    background: #F0F0FF;
+    border: 1px solid #CCCCFF;
+}
+.accordion-content.open{
+    padding-bottom: 0.625rem;
+}
+.accordion-content header{
+    padding: 1rem;
+    min-height: 50px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+} 
+.accordion-content.open header{
+    min-height: 35px;
+} 
+.accordion-content header .title{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+.accordion-content header i{
+    font-size: 1rem;
+    color: #333;
+}
+.accordion-content .description{
+    height: 0;
+    font-size: 0.75rem;
+    color: #333;
+    font-weight: 400;
+    padding: 0 0.9375rem;
+    transition: all 0.4s linear;
+}
