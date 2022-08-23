@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alternate Accordion Practice</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <style>
+            *{
+                margin: 0;
+            }
+            .accordion{
+                max-width: 1000px;
+                margin: auto;
+            }
+            .accordion-content{
+                overflow: hidden;
+            }
+            header{
+                background: #444;
+                color: #fff;
+                padding: 1rem;
+                cursor: pointer;
+            }
+            .description{
+                height: 0;
+            }
+            .accordion-content.open{
+                
+            }
+            
+
+        </style>
+
+    </head>
+    <body>
+        <div class="accordion">
+            <div class="accordion-content">
+                <header>
+                    <span class="title">What do you mean by accordion</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, praesentium, dolorum non, perspiciatis ab placeat facere sed assumenda aspernatur dolor hic perferendis laboriosam?
+                </p>
+            </div>
+
+            <div class="accordion-content">
+                <header>
+                    <span class="title">What do you mean by accordion</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, praesentium, dolorum non, perspiciatis ab placeat facere sed assumenda aspernatur dolor hic perferendis laboriosam?
+                </p>
+            </div>
+
+            <div class="accordion-content">
+                <header>
+                    <span class="title">What do you mean by accordion</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, praesentium, dolorum non, perspiciatis ab placeat facere sed assumenda aspernatur dolor hic perferendis laboriosam?
+                </p>
+            </div>
+
+        </div>        
+
+        <script>
+
+            let accordionContent = document.querySelectorAll(".accordion-content");
+            accordionContent.forEach((item, index) => {
+                let header = item.querySelector('header');
+
+                header.addEventListener("click", () => {
+
+                    console.log("its clicked");
+                    item.classList.toggle('open');
+                    let descri = item.querySelector('.description');
+                
+                    if(item.classList.contains('open')){
+                        descri.style.height = `${descri.scrollHeight}px`;
+                        item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+
+                    }else{
+                        descri.style.height = "0px";
+                        item.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                    }
+                    
+                    removeOpen(index);
+                
+                });
+            });
+
+            function removeOpen(index1) {
+                accordionContent.forEach((item2, index2) => {
+                    if(index1 != index2){
+                        item2.classList.remove('open');
+                        let descr = item2.querySelector('.description');
+                        descr.style.height = "0px";
+                        item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
