@@ -10,6 +10,8 @@ h1, .h1
     font-size: 2rem
     font-weight: $font-light
     line-height: 1.15
+    letter-spacing: 3px
+    text-transform: uppercase
 
 h3 
     font-size: 1.2rem
@@ -23,6 +25,25 @@ h3
     font-weight: $font-black
     span 
         font-weight: $font-light
+
+
+.title-box
+    background: $accent
+    color: $text-inverse
+    padding: 2em
+    margin: 0 auto
+    transform: translateY(30%)
+    max-width: 90%
+    box-sizing: border-box
+
+    @media(min-width: 495px)
+        transform: translateY(50%)
+
+
+    & + .bg-main
+        padding-top: 6em
+        @media(min-width: 495px)
+            padding-top: 8em
 
 .text-intro 
     font-size: 1.2rem
