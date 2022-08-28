@@ -311,6 +311,40 @@ template {
   display: none;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 0 0 100%;
+  padding: 0 0.75em;
+  box-sizing: border-box;
+}
+@media (min-width: 725px) {
+  .col:first-of-type {
+    padding-left: 0;
+  }
+  .col:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.col--full {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 725px) {
+  .col--1-3 {
+    flex-basis: 33.3333%;
+  }
+  .col--2-3 {
+    flex-basis: 66.6666%;
+  }
+  .col--1-2 {
+    flex-basis: 50%;
+  }
+}
 *, *::before, *::affter {
   box-sizing: border-box;
 }
@@ -318,7 +352,6 @@ template {
 body {
   color: rgb(4, 140, 168);
   text-align: center;
-  outline: 2px solid;
 }
 
 img {
@@ -340,6 +373,11 @@ img {
 
 .lg-screen {
   display: none;
+}
+@media (min-width: 725px) {
+  .lg-screen {
+    display: block;
+  }
 }
 
 .bg-main {
@@ -377,6 +415,7 @@ h3 {
 .title-large {
   font-size: 3rem;
   font-weight: 900;
+  line-height: 0.9;
 }
 .title-large span {
   font-weight: 300;
@@ -404,22 +443,28 @@ h3 {
     padding-top: 8em;
   }
 }
+@media (min-width: 725px) {
+  .title-box {
+    max-width: 700px;
+  }
+}
+
+.title-footer {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.title-footer::before, .title-footer::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgb(255, 255, 255);
+  opacity: 0.25;
+  margin: 0.75em 0;
+}
 
 .text-intro {
   font-size: 1.2rem;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  flex: 0 0 100%;
-}
-
-.col--full {
-  flex: 0 0 100%;
 }
 
 .main-nav {
@@ -515,6 +560,33 @@ h3 {
   padding-bottom: 8em;
   text-align: center;
 }
+@media (min-width: 725px) {
+  .hero {
+    text-align: left;
+    padding-bottom: 0;
+    height: 80vmin;
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 725px) {
+  .hero-text {
+    margin-top: 10vmax;
+  }
+}
+
+.promo .bg-main {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
+}
+
+.img-box {
+  background: url("../img/phone-in-hand.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 .sales-points {
   padding: 10vh 0 0;
@@ -527,6 +599,54 @@ h3 {
 }
 .sales-points .sales-point:last-child {
   margin-bottom: 0;
+}
+@media (min-width: 725px) {
+  .sales-points .sales-point:first-of-type {
+    margin-top: 0;
+  }
+}
+
+footer {
+  background: #444;
+  color: rgb(255, 255, 255);
+  padding: 5em 0;
+  position: relative;
+}
+footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(../img/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+}
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+.social-links {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+  opacity: 0.8;
+  margin: 0.7em 0;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+.nav-footer a {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .btn {
@@ -552,4 +672,14 @@ h3 {
 .btn--secondary:hover, .btn--secondary:focus {
   background: rgb(255, 255, 255);
   color: rgb(4, 140, 168);
+}
+
+.cta {
+  background-color: rgb(22, 219, 147);
+  background-image: url("../img/call-to-action-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em 0;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */

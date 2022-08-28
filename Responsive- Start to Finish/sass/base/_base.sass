@@ -4,7 +4,7 @@
 body
     color: $text-main
     text-align: center
-    outline: 2px solid
+    // outline: 2px solid
     
 img
     max-width: 100%
@@ -22,7 +22,8 @@ img
 
 .lg-screen
     display: none
-
+    @media(min-width: 725px)
+        display: block
 .bg-main
     background: $main
     color: $text-inverse
