@@ -1,25 +1,43 @@
+
+.main-header
+    .grid
+        align-items: center
+    
 .main-nav 
     background: $accent
     position: absolute
     top: 0
-    left: 100%
+    left: 0
     right: 0
     font-size: 1.2rem
-
     overflow: hidden
-
     transition: all 250ms ease-in-out
 
+    @media(min-width: 725px)
+        position: relative
+        flex: auto
+        background: none        
     ul.unstyled-list
         height: 100vh
         display: flex
         flex-direction: column
         justify-content: space-evenly
 
+        @media(min-width: 725px)
+            flex-direction: row
+            height: auto
+            justify-content: flex-end
+
     li
         flex: 1 1 auto
         border-bottom: 1px solid rgba(0,0,0,.15)
         display: flex
+
+        @media(min-width: 725px)
+            border: none
+            display: inline-block
+            text-align: right
+
 
     a   
         color: $text-inverse
@@ -28,10 +46,17 @@
         align-items: center
         justify-content: center
         flex-basis: 100%
+            
+        @media(min-width: 725px)
+            display: inline-block
 
         &:hover,
         &:focus
             background: rgba(0,0,0,.10)
+            @media(min-width: 725px)
+                background: none
+                color: darken($accent, 15%)
+
 
     &.is-open
         left: 0
@@ -43,6 +68,9 @@
     top: 1rem
     right: 1rem
     cursor: pointer
+    
+    @media(min-width: 725px)
+        display: none
 
 .hamburger, .hamburger::before, .hamburger::after
     content: ''
