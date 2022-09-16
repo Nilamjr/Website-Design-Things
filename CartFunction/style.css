@@ -38,7 +38,6 @@ h1{
     color: var(--color-inverse);
 }
 .cart-box{
-    border: 2px solid;
     position: absolute;   
     left: 72%;
     top: 25%;
@@ -55,6 +54,7 @@ h1{
 .cart-box .cart-wrapper{
     overflow-y: auto;   /* makes verticle scroll bar avvailable when needed   */
     max-height: 350px;
+    width: 26vw;
 }
 .cart-box .sub-total{
     text-align: right;
@@ -75,7 +75,7 @@ h1{
     color: var(--back-color);
 }
 .cart-wrapper .cart-items{
-    display: grid;
+    display: grid ;
     grid-template-columns: 3fr 6fr 1fr;
     padding: 5% 2%;
     border-bottom: 1px solid gray;
@@ -103,6 +103,7 @@ h1{
 }
 .cart-items .cart-close{
     color: var(--back-color);
+    cursor: pointer;
 }
 .whole-cart-window{
     border: 2px solid lightgray;
